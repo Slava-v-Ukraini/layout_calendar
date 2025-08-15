@@ -17,13 +17,13 @@
     box-sizing: border-box;
     background-color: $cell-color;
     position: relative;
+    transition:
+      transform,
+      background-color $transition-duration;
     &:hover {
       background-color: #ffbfcb;
       cursor: pointer;
       transform: translateY(-20px);
-      transition:
-        transform,
-        background-color $transition-duration;
     }
   }
 }
@@ -33,6 +33,11 @@
     content: '#{$i}';
     font-size: $cell-font-size;
     font-family: $font-arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
   }
 }
 

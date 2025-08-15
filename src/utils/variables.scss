@@ -1,7 +1,7 @@
 $day-size: 100px;
 $padding: 10px;
 $gap: 1px;
-$calendar-width: calc($day-size * 7 + $padding * 2 + $gap * 6);
+$calendar-width: 7 * $day-size + 6 * $gap + 2 * $padding;
 $border: 1px;
 $cell-color: #eee;
 $font-arial: Arial, sans-serif;
